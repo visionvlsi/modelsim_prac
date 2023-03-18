@@ -1,4 +1,4 @@
-#### MUX2x1
+#### MUX2x1 file_name: mux2x1.v
 ```
 module mux2x1(a,b,s,y);
 
@@ -53,7 +53,7 @@ $display(" From Behavioural");
 endmodule
 ```
 
-#### MUX2x1 Testbench
+#### MUX2x1 Testbench file_name: tb.v
 
 ```
 `timescale 1ns/1ps
