@@ -83,3 +83,21 @@ $stop;
 end
 endmodule
 ```
+#### Steps in command line
+```
+1. To compile particular modeling
+
+vlog +define+gatelevel mux2x1.v tb.v
+
+2. To simulate without waveform window
+
+vsim -c <testbench module name>
+
+3. To run 
+
+run -all
+
+4. To quit simulation
+
+quit -sim
+```
