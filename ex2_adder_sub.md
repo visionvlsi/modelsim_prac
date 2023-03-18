@@ -1,4 +1,4 @@
-#### adder and subtractor using  diffrent modeling styles
+#### adder and subtractor using  diffrent modeling styles; file_name: fas.v
 
 ```
 module fas(a,b,cin,sum_diff,co_borrow);
@@ -49,7 +49,7 @@ end
 endmodule
 ```
 
-#### Testbench 
+#### Testbench; file_name: tb.v
 ```
 
 `timescale 1ns/1ns
@@ -74,3 +74,21 @@ $finish;
 end
 endmodule
 ```
+#### Steps in command line
+```
+1. To compile particular modeling
+
+vlog +define+adder fas.v tb.v
+
+2. To simulate without waveform window
+
+vsim -c <testbench module name>
+
+3. To run 
+
+run -all
+
+4. To quit simulation
+
+quit -sim
+ ```
